@@ -1,0 +1,273 @@
+/* Reset styles for the navbar */
+
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the navbar container */
+ 
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #ddd; /* Lighter background color */
+    color: black; /* Dark text color */
+  }
+  
+  /* Style the active link */
+  .menu li a .active {
+    background-color: #4CAF50; /* Green background color */
+  }
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search button {
+    padding: 8px 15px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .search {
+        margin-left: auto;
+    }
+}
+
+
+  .feature-banner {
+    min-height: 450px;
+    background-color: antiquewhite;
+    background-image: url(Images/banner\ Image.png); /* Replace 'banner.jpg' with your image */
+    background-size: 119%;
+    background-position: center;
+    color: #ffffff;
+    text-align: justify;
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+.navbar.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+
+.sticky-section {
+    padding: 50px 0; /* Adjust padding as needed */
+    background-color: #f0f0f0; /* Background color for the section */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.left {
+    flex: 1; /* Take up 50% of the container width */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px; /* Adjust the top spacing as needed */
+    padding-right: 20px; /* Adjust spacing between left and right sides */
+}
+
+.left img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px; /* Adjust spacing between image and heading */
+}
+
+.right {
+    flex: 1; /* Take up 50% of the container width */
+}
+
+.scrollable-description {
+    max-height: 300px; /* Set maximum height for scrollable description */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-top: 0; /* Remove default margin for h2 */
+font-size: 50px;
+
+}
+
+
+
+
+
+.journey {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.journey h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.journey-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #e0f2f1; /* Light blue background */
+    animation: spin 5s linear infinite;
+}
+
+.image-container img {
+    padding: 10%;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    position: relative;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-content ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+.two-column-table{
+
+    column-count: 2;
+    row
+    background-color: rgb(129, 168, 155), ;
+    
+}
+
+.two-column-table .row {
+    background-position: 50%;
+}
+
+
