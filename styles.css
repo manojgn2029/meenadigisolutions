@@ -1,17 +1,11 @@
 /* Reset styles for the navbar */
-
 body, html {
     margin: 0;
     padding: 0;
-  }
-  
-  /* Style the navbar container */
- 
-  body {
-    margin: 0;
     font-family: Arial, sans-serif;
 }
 
+/* Style the navbar container */
 header {
     background-color: #333;
     padding: 10px 10px;
@@ -21,6 +15,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo img {
@@ -49,12 +44,7 @@ nav {
 .menu li a:hover {
     background-color: #ddd; /* Lighter background color */
     color: black; /* Dark text color */
-  }
-  
-  /* Style the active link */
-  .menu li a .active {
-    background-color: #4CAF50; /* Green background color */
-  }
+}
 
 .search {
     display: flex;
@@ -85,50 +75,47 @@ nav {
     .search {
         margin-left: auto;
     }
+
+    .logo img {
+        width: 80px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
 }
 
-
-  .feature-banner {
+.feature-banner {
     min-height: 450px;
     background-color: antiquewhite;
     background-image: url(Images/banner\ Image.png); /* Replace 'banner.jpg' with your image */
-    background-size: 119%;
+    background-size: cover;
     background-position: center;
     color: #ffffff;
     text-align: justify;
-    padding: 100px 0; /* Adjust padding as needed */
+    padding: 50px 0; /* Adjust padding as needed */
 }
 
-.navbar.container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: flex-start;
-}
-
-h1 {
-    font-size: 3em;
+.feature-banner h1 {
+    font-size: 2.5em;
     margin: 0;
 }
 
-
 .sticky-section {
-    padding: 50px 0; /* Adjust padding as needed */
+    padding: 30px 0; /* Adjust padding as needed */
     background-color: #f0f0f0; /* Background color for the section */
 }
 
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    align-items: flex-start; /* Align items to the top */
+    flex-direction: column;
 }
 
 .left {
-    flex: 1; /* Take up 50% of the container width */
-    position: -webkit-sticky;
-    position: sticky;
-    top: 50px; /* Adjust the top spacing as needed */
+    flex: 1;
     padding-right: 20px; /* Adjust spacing between left and right sides */
 }
 
@@ -140,26 +127,46 @@ h1 {
 }
 
 .right {
-    flex: 1; /* Take up 50% of the container width */
+    flex: 1;
 }
 
-.scrollable-description {
-    max-height: 300px; /* Set maximum height for scrollable description */
-    overflow-y: auto; /* Enable vertical scrolling */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.text-section {
+    margin: 20px auto;
+    padding: 0 5%;
 }
 
-h2 {
-    margin-top: 0; /* Remove default margin for h2 */
-font-size: 50px;
-
+.text-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
 }
 
+.text-section p {
+    font-size: 1.2em;
+}
 
+.services-section {
+    background-color: rgb(231, 226, 221);
+    padding: 30px 0;
+}
 
+.services-section .container {
+    display: flex;
+    flex-direction: column;
+}
 
+.services-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.services-section .services {
+    column-count: 2;
+    column-gap: 20px;
+}
+
+.services-section .services h3 {
+    margin-bottom: 10px;
+}
 
 .journey {
     text-align: center;
@@ -167,21 +174,20 @@ font-size: 50px;
 }
 
 .journey h2 {
-    font-size: 24px;
+    font-size: 1.8em;
     margin-bottom: 20px;
 }
 
 .journey-images {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    position: relative;
 }
 
 .image-container {
     width: 150px;
     height: 150px;
-    margin: 0 20px;
+    margin: 10px;
     position: relative;
     overflow: hidden;
 }
@@ -207,14 +213,6 @@ font-size: 50px;
     100% { transform: rotate(360deg); }
 }
 
-
-
-
-
-
-
-
-
 footer {
     background-color: #333;
     color: #fff;
@@ -227,6 +225,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-content p {
@@ -243,31 +242,4 @@ footer {
     margin-right: 20px;
 }
 
-.footer-content ul li:last-child {
-    margin-right: 0;
-}
-
-.footer-content ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-content ul li a:hover {
-    text-decoration: underline;
-}
-
-
-
-.two-column-table{
-
-    column-count: 2;
-    row
-    background-color: rgb(129, 168, 155), ;
-    
-}
-
-.two-column-table .row {
-    background-position: 50%;
-}
-
-
+.footer-content ul li
